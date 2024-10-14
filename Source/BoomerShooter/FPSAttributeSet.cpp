@@ -3,3 +3,6 @@
 
 #include "FPSAttributeSet.h"
 
+UFPSAttributeSet::UFPSAttributeSet()
+{
+}
