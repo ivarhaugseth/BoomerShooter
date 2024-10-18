@@ -20,9 +20,13 @@ void UFPSAttributeSet::PreAttributeChange(const FGameplayAttribute& Attribute, f
 	{
 		NewValue = FMath::Clamp<float>(NewValue, 0, Character->MaxArmor);
 	}
-	else if (Attribute == GetBulletsAttribute())
+	else if (Attribute == GetShotgunAmmoAttribute())
 	{
-		NewValue = FMath::Clamp<float>(NewValue, 0, Character->MaxBullets);
+		NewValue = FMath::Clamp<float>(NewValue, 0, Character->MaxShotgunAmmo);
+	}
+	else if (Attribute == GetPistolAmmoAttribute())
+	{
+		NewValue = FMath::Clamp<float>(NewValue, 0, Character->MaxPistolAmmo);
 	}
 }
 
@@ -44,9 +48,14 @@ bool UFPSAttributeSet::PreGameplayEffectExecute(FGameplayEffectModCallbackData& 
 			SetHealth(Character->MaxHealth);
 			return false;
 		}
-		else if (Data.EvaluatedData.Attribute == GetBulletsAttribute() && GetBullets() + AbsoluteMagnitude >= Character->MaxBullets)
+		else if (Data.EvaluatedData.Attribute == GetShotgunAmmoAttribute() && GetShotgunAmmo() + AbsoluteMagnitude >= Character->MaxShotgunAmmo)
 		{
-			SetBullets(Character->MaxBullets);
+			SetShotgunAmmo(Character->MaxShotgunAmmo);
+			return false;
+		}
+		else if (Data.EvaluatedData.Attribute == GetPistolAmmoAttribute() && GetPistolAmmo() + AbsoluteMagnitude >= Character->MaxPistolAmmo)
+		{
+			SetPistolAmmo(Character->MaxPistolAmmo);
 			return false;
 		}
 	}
@@ -72,8 +81,12 @@ void UFPSAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCallbac
 	{
 		SetArmor(0);
 	}
-	else if (Data.EvaluatedData.Attribute == GetBulletsAttribute() && GetBullets() < 0)
+	else if (Data.EvaluatedData.Attribute == GetShotgunAmmoAttribute() && GetShotgunAmmo() < 0)
 	{
-		SetBullets(0);
+		SetShotgunAmmo(0);
+	}
+	else if (Data.EvaluatedData.Attribute == GetPistolAmmoAttribute() && GetPistolAmmo() < 0)
+	{
+		SetPistolAmmo(0);
 	}
 }

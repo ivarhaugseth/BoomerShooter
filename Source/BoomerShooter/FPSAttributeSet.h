@@ -34,8 +34,12 @@ public:
 	ATTRIBUTE_ACCESSOR(UFPSAttributeSet, Armor)
 
 	UPROPERTY(BlueprintReadOnly, Category = "Attributes")
-	FGameplayAttributeData Bullets;
-	ATTRIBUTE_ACCESSOR(UFPSAttributeSet, Bullets)
+	FGameplayAttributeData ShotgunAmmo;
+	ATTRIBUTE_ACCESSOR(UFPSAttributeSet, ShotgunAmmo)
+
+	UPROPERTY(BlueprintReadOnly, Category = "Attributes")
+	FGameplayAttributeData PistolAmmo;
+	ATTRIBUTE_ACCESSOR(UFPSAttributeSet, PistolAmmo)
 
 	virtual void PreAttributeChange(const FGameplayAttribute& Attribute, float& NewValue) override;
 	virtual bool PreGameplayEffectExecute(struct FGameplayEffectModCallbackData& Data) override;
