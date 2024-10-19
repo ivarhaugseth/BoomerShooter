@@ -38,7 +38,10 @@ public:
 	int MaxArmor = 100;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Attributes")
-	int MaxBullets = 250;
+	int MaxPistolAmmo = 12;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Attributes")
+	int MaxShotgunAmmo = 80;
 
 protected:
 	// Called when the game starts or when spawned
