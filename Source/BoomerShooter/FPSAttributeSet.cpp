@@ -40,7 +40,7 @@ bool UFPSAttributeSet::PreGameplayEffectExecute(FGameplayEffectModCallbackData& 
 	{
 		if (Data.EvaluatedData.Attribute == GetArmorAttribute() && GetArmor() + AbsoluteMagnitude >= Character->MaxArmor)
 		{
-			SetArmor(Character->MaxArmor);
+			SetArmor(FMath::Clamp(GetArmor(), 0.0f, Character->MaxArmor));
 			return false;
 		}
 		else if (Data.EvaluatedData.Attribute == GetHealthAttribute() && GetHealth() + AbsoluteMagnitude >= Character->MaxHealth)
@@ -58,13 +58,20 @@ bool UFPSAttributeSet::PreGameplayEffectExecute(FGameplayEffectModCallbackData& 
 			SetPistolAmmo(Character->MaxPistolAmmo);
 			return false;
 		}
+		else if (Data.EvaluatedData.Attribute == GetGrenadeAmmoAttribute() && GetGrenadeAmmo() + AbsoluteMagnitude >= Character->MaxGrenadeAmmo)
+		{
+			SetGrenadeAmmo(Character->MaxGrenadeAmmo);
+			return false;
+		}
 	}
 	else if (Data.EvaluatedData.Magnitude < 0)
 	{
 		// Case where the damage is greater than the armor value and so the armor is destroyed and the remaining damage is applied to the health
 		if (Data.EvaluatedData.Attribute == GetArmorAttribute() && AbsoluteMagnitude > GetArmor())
 		{
-			Health.SetCurrentValue(Health.GetCurrentValue() - (AbsoluteMagnitude - GetArmor()));
+			float RemainingDamage = AbsoluteMagnitude - GetArmor();
+			SetArmor(0);
+			Health.SetCurrentValue(Health.GetCurrentValue() - RemainingDamage);
 		}
 	}
 
@@ -88,5 +95,9 @@ void UFPSAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCallbac
 	else if (Data.EvaluatedData.Attribute == GetPistolAmmoAttribute() && GetPistolAmmo() < 0)
 	{
 		SetPistolAmmo(0);
+	}
+	else if (Data.EvaluatedData.Attribute == GetGrenadeAmmoAttribute() && GetGrenadeAmmo() < 0)
+	{
+		SetGrenadeAmmo(0);
 	}
 }
