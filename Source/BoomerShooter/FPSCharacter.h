@@ -43,6 +43,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Attributes")
 	int MaxShotgunAmmo = 80;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Attributes")
+	int MaxGrenadeAmmo = 3;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
