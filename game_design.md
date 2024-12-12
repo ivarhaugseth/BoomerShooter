@@ -14,13 +14,13 @@ Given we are using git you could also use @name to assign parts of the design to
 
 
 ## Overview
-*Ivar, Petter, Hannah* , *Group03*
+*Ivar, Petter, Hannah , Nikolai*
 
 ### Game Concept
 What the game is about? - Move and shoot
 
 ### Genre
-What other games is it like? - Doom, Quake, Wolfenstein 3D, Ultrakill
+What other games is it like? - Doom, Quake, Wolfenstein 3D, Ultrakill, Half Life 1
 
 ### Target Audience
 Who will play it? - Genre fans(?); nostalgic players, people who wanna play such games
@@ -32,7 +32,7 @@ How does the player move through the game? - Move and shoot, leave nothing alive
 What is the basic look and feel of the game?  What is the visual style? - Pixelated/retro vibe/aesthetic, grotesque feel(gore, blood etc)
 
 ## Gameplay and Mechanics
-What does the player do? - Move and shoot. Resource management(ammo, health etc). Advanced movement options(double jump, dash, slide, slam, wall ride etc). Mix and match strategies for different type of enemies.
+What does the player do? - Move and shoot. Resource management(ammo, health etc). Advanced movement options(double jump, dash). Mix and match strategies for different type of enemies.
 
 ### Gameplay
 What is the core of the players interaction with the game? - Move and shoot.
