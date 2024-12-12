@@ -1,7 +1,7 @@
 # Boomer Shooter / PRAMS
 
 - Petter Sandvik
-- Hannah
+- Hannah Burkart
 - Nikolai
 - Ivar
 
