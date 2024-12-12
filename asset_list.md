@@ -1,5 +1,5 @@
 # List of assets used in the project
-Not every asset requires attribution by their license, but still here is everything.
+Not every asset requires attribution by their license, but still, here is everything.
 ### General assets used throughout project
 - FPS Gun Sprites by Rekkimaru. Our game uses the pistol sprites. https://rekkimaru.itch.io/fps-gun-sprites
 - Doom-like Weapon (weapon sprite) by vmgangsta7. Used for shotgun. https://vmgangsta7.itch.io/doom-like-weapon
