@@ -3,11 +3,11 @@
 UTurretAttributeSet::UTurretAttributeSet()
 {
 	// Initialize default values
-	Health.SetBaseValue(50.0f);
-	Health.SetCurrentValue(50.0f);
+	Health.SetBaseValue(40.0f);
+	Health.SetCurrentValue(40.0f);
 
-	Armor.SetBaseValue(50.0f);
-	Armor.SetCurrentValue(50.0f);
+	Armor.SetBaseValue(40.0f);
+	Armor.SetCurrentValue(40.0f);
 }
 
 void UTurretAttributeSet::PreAttributeChange(const FGameplayAttribute& Attribute, float& NewValue)
