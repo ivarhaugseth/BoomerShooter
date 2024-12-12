@@ -48,3 +48,4 @@ Note that some of these sound assets were adjusted using Audacity, but only for 
 - Portal SFX by hedonfire. Sound used for portal taking you to hell. https://freesound.org/people/hedonfire/sounds/647448/
 - creepy_basement by Romsaas. Sound used for background music in basement section. Provided by himself.
 - Doom - Byte Sized OST by Chad Wolfe. Sound/music used in final hell section. https://opengameart.org/content/doom-byte-sized-ost
+- Low Spec Retro Computer - Commodore PET by pistachio. Asset used for computers in level. https://opengameart.org/content/low-spec-retro-computer-commodore-pet
