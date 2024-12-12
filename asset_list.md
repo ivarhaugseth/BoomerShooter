@@ -32,6 +32,16 @@ Not every asset requires attribution by their license, but still, here is everyt
 - Life Pickup (Yo Frankie!) by Blender Foundation. Sound used for health pickup. https://opengameart.org/content/life-pickup-yo-frankie
 - Shotgun Reload Sound Effects by zer0_sol. Sound used for equipping shotgun. https://opengameart.org/content/shotgun-reload-sound-effects
 
+### Mainmenu + HUD
+- Damage Indicator https://www.pngkey.com/detail/u2e6w7u2r5i1o0w7_screen-red-vignette-parallel/
+- Crosshair - www.kenney.nl
+- P.R.A.M.S Logo - created by Hannah Burkart
+- Arrows in the menues - created by Hannah Burkart
+- Dash Icon - created by Hannah Burkart
+- Heart Icon - created by Hannah Burkart
+- Box with the Health/Progress/Dashbars - created by Hannah Burkart
+- Weaponboxes (all variations) - created by Hannah Burkart
+
 ### Level 4 specific assets
 Note that some of these sound assets were adjusted using Audacity, but only for assets with CC0 license.
 - Monster Mutant For FPS Game by Nmn. Sprites used for Hell Hounds. https://opengameart.org/content/monster-mutant-for-fps-game
