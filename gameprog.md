@@ -9,6 +9,8 @@ This video shows off various gameplay sections of the game to give an idea of th
 https://www.dropbox.com/scl/fi/61j3msh3vnqhxfzajyu0j/group-video.mp4?rlkey=zgnuk1cboe13gk503db9n04rn&st=k9nk0jsl&dl=0
 #### YouTube Link: https://youtu.be/Mw_yA2ZbTNA
 
+#### Packaged Project: https://www.dropbox.com/scl/fi/yumi30w71h5roz1gnm3fs/PRAMS.zip?rlkey=fsiq1el5zmw3a1t36p2j6p6mi&st=grxe1irb&dl=0
+
 ## Group Discussion
 ### Strengths and weaknesses of Unreal Engine usage
 ### Strengths
