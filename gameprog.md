@@ -7,6 +7,7 @@
 
 ## Gameplay video
 This video shows off various gameplay sections of the game to give an idea of the general game functionality.
+Main menu and Level 3: https://youtu.be/ooKvDYnENTo
 
 ## Group Discussion
 ### Strengths and weaknesses of Unreal Engine usage
