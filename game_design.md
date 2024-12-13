@@ -14,7 +14,7 @@ Given we are using git you could also use @name to assign parts of the design to
 
 
 ## Overview
-*Ivar, Petter, Hannah , Nikolai*
+*Petter, Hannah , Nikolai*
 
 ### Game Concept
 What the game is about? - Move and shoot
