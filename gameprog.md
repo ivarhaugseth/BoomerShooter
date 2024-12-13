@@ -35,7 +35,9 @@ We also faced occasional performance issues in the Unreal Editor. Sometimes the 
 While Unreal Engine is great for 3D games, it’s not the best choice for 2D games. The tools and workflows are built around 3D, and trying to make a 2D game feels more difficult than it needs to be.
 
 ### Process and communication during development
-bla bla bla
+Effective process and communication is vital when working with a team. Thorughout the project, we faced several challenges and discovered strategies to helo us collabborate more effectively. When starting the project, we held group meetings in order to assign a role to each of the team members, as well as setting up a scrumboard to keep track of the tasks we were going to finish. We held group meetings once or twice every week, showing off what we each have done and came up with improvements, and asked questions about each others showcases. We have had some challenges with communication where some liked to work more independently and others joined up for team meetings, but the communication and process during the game development was overall good. We split up the development into branches and specific task per groupmember like leveldesign, weapon and character implementation as well as main menu of the game and the development of the enemies.
+
+
 ### Use of version control systems, ticket tracking, branching, version control
 In our project we have used Git and GitHub for version control and storing of our project code. In our group there was however a large difference between members in knowlegde and experience with using Git, so this is also reflected in our usage of Git. So not everything is optimal in this aspect.
 
