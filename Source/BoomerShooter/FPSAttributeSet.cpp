@@ -38,14 +38,16 @@ bool UFPSAttributeSet::PreGameplayEffectExecute(FGameplayEffectModCallbackData& 
 
 	if (Data.EvaluatedData.Magnitude > 0)
 	{
-		if (Data.EvaluatedData.Attribute == GetArmorAttribute() && GetArmor() + AbsoluteMagnitude >= Character->MaxArmor)
+		if (Data.EvaluatedData.Attribute == GetArmorAttribute())
 		{
-			SetArmor(FMath::Clamp(GetArmor(), 0.0f, Character->MaxArmor));
+			float NewArmorValue = GetArmor() + Data.EvaluatedData.Magnitude;
+			SetArmor(FMath::Clamp(NewArmorValue, 0.0f, static_cast<float>(Character->MaxArmor)));
 			return false;
 		}
-		else if (Data.EvaluatedData.Attribute == GetHealthAttribute() && GetHealth() + AbsoluteMagnitude >= Character->MaxHealth)
+		else if (Data.EvaluatedData.Attribute == GetHealthAttribute())
 		{
-			SetHealth(Character->MaxHealth);
+			float NewHealthValue = GetHealth() + Data.EvaluatedData.Magnitude;
+			SetHealth(FMath::Clamp(NewHealthValue, 0.0f, static_cast<float>(Character->MaxHealth)));
 			return false;
 		}
 		else if (Data.EvaluatedData.Attribute == GetShotgunAmmoAttribute() && GetShotgunAmmo() + AbsoluteMagnitude >= Character->MaxShotgunAmmo)

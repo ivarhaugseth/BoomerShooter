@@ -38,10 +38,10 @@ public:
 	int MaxArmor = 100;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Attributes")
-	int MaxPistolAmmo = 12;
+	int MaxPistolAmmo = 80;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Attributes")
-	int MaxShotgunAmmo = 80;
+	int MaxShotgunAmmo = 30;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Attributes")
 	int MaxGrenadeAmmo = 3;
