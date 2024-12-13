@@ -10,7 +10,26 @@ This video shows off various gameplay sections of the game to give an idea of th
 
 ## Group Discussion
 ### Strengths and weaknesses of Unreal Engine usage
-bla bla bla
+### Strengths
+#### Blueprint Visual Scripting
+Unreal's Blueprint system allows non-programmers to create complex game logic using a drag-and-drop interface. This makes development more accessible and lets team members contribute regardless of coding experience.
+
+#### Pre-Built Features
+The engine provides many pre-built elements, like character controllers and collision handling, which significantly speed up development. These tools allowed us to focus on unique aspects of our game instead of building everything from scratch.
+
+#### High-Quality Graphics
+Unreal Engine excels in producing high-quality graphics with advanced lighting and shading systems. Its real-time ray tracing, detailed material editor, and post-processing effects like motion blur and depth of field make it easy to create photorealistic visuals. This capability allows developers to achieve stunning, high-fidelity graphics with minimal effort, making Unreal a popular choice for AAA games and high-end projects. However, for our retro shooter, this level of graphic quality wasn't really necessary, as our focus was more on gameplay and nostalgic visuals rather than cutting-edge realism.
+
+### Weaknesses
+##### Limited and Inconsistent Documentation
+One major issue we ran into was Unreal Engine’s documentation. While it’s available, it often lacks detail or doesn’t cover everything we needed. Several times, the official docs were too vague, so we had to turn to community forums, Discord groups, or Reddit to find solutions. While the community is generally helpful, relying on external sources for important information can be time-consuming and frustrating.
+
+##### Limited and Outdated Tutorials
+Unreal Engine has fewer tutorials compared to Unity, and many of the ones that are available are outdated. This made learning some parts of the engine harder for our team, especially when dealing with advanced topics like optimization or custom C++ scripting. It would be much easier to learn if there were more up-to-date and comprehensive tutorials.
+
+#### Performance Issues in the Editor
+We also faced occasional performance issues in the Unreal Editor. Sometimes the FPS would drop for no clear reason, making it difficult to work smoothly. While this wasn’t always the case, it definitely interrupted our workflow and made development a bit more frustrating than expected.
+
 ### Process and communication during development
 bla bla bla
 ### Use of version control systems, ticket tracking, branching, version control
