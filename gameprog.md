@@ -2,8 +2,7 @@
 
 - Petter Sandvik
 - Hannah Burkart
-- Nikolai
-- Ivar
+- Nikolai Skaaheim-Grøna
 
 ## Gameplay video
 This video shows off various gameplay sections of the game to give an idea of the general game functionality.
